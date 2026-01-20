@@ -1,13 +1,13 @@
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
+import User from './components/User';
 
 export default function App() {
   return (
-      <>
-        <Header />
-        <Main />
-        <Footer />
-      </>
+    <>
+      <User title='User Component'>
+        <p>James</p>
+        <p>20</p>
+        <p>male</p>
+      </User>
+    </>
   )
 }
