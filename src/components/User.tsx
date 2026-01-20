@@ -1,13 +1,8 @@
-export default function User(props: {
-    userObj: { name: string; age: number };
-    clickHandler: () => void;
-}) {
-    const { userObj: { name, age }, clickHandler, } = props;
+export default function User({ title, children }: { title: string; children: React.ReactNode; }) {
     return (
         <>
-            <p>{name}</p>
-            <p>{age}</p>
-            <button onClick={clickHandler}>클릭</button>
+            <p>{title}</p>
+            {children}
         </>
     )
 }
